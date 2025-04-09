@@ -40,6 +40,18 @@
 
     // 3. Utilizar la función fetch para hacer la llamada a esa URL
     // y procesar los datos. Significa, asignar al <h5> del DOM el nombre del pokemon que hemos recuperado de la llamada. Y en la etiqueta <img> debemos establecer el atricuto 'src' con el valor de la URL donde se ubica la imagen del pokemon
+
+    const selectPokemon = document.getElementById('select-pokemon');
+    const cardTitle = document.querySelector('.card-title');
+    const cardImage = document.querySelector('.card-img-top');
+    const cardImageShiny = document.querySelector('.card-img-top');
+    const cardButton = document.querySelector('.btn-success');
+
+    selectPokemon.addEventListener('change', async function (event) {
+        const selectedPokemon = event.target.value;
+        console.log(selectedPokemon);
+
+
 </script>
 
 </html>
